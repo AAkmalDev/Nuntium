@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.BookmarkFragment">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        style="@style/TextView_Toolbar"
+        android:text="@string/bookmarks" />
+
+    <TextView
+        android:id="@+id/welcome_desc_text"
+        style="@style/TextView_Toolbar_Desc"
+        android:layout_below="@id/welcome_text"
+        android:text="@string/saved_articles_to_the_library" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/small_news_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/welcome_desc_text"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/news_small_item" />
+
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/_63sdp"
+            android:layout_height="@dimen/_63sdp"
+            android:background="@drawable/book_empty_back"
+            android:contentDescription="@string/bookmarks"
+            android:paddingHorizontal="28dp"
+            android:paddingVertical="28dp"
+            android:src="@drawable/ic_book_empty" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:gravity="center"
+            android:text="@string/you_haven_t_saved_any_articles"
+            android:textColor="@color/black_primary"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+</RelativeLayout>

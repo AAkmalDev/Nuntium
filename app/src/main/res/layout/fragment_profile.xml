@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcome_text"
+            style="@style/TextView_Toolbar"
+            android:text="@string/profile" />
+
+        <RelativeLayout
+            android:id="@+id/user_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome_text"
+            android:layout_marginTop="25dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/user_image"
+                android:layout_width="@dimen/_58sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp"
+                android:src="@drawable/ic_launcher_background"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/user_image"
+                android:elevation="1dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:maxLines="1"
+                android:text="John Deo"
+                android:textColor="@color/black_primary"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/user_image"
+                android:elevation="1dp"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:maxLines="1"
+                android:text="developerakmal@gmail.com"
+                android:textColor="@color/grey_primary"
+                android:textSize="@dimen/_11sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notification_layout"
+            style="@style/Relative_Profile_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/user_profile">
+
+            <TextView
+                android:id="@+id/notification_text"
+                style="@style/TextView_Profile_Layout"
+                android:text="@string/notifications" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/language_layout"
+            style="@style/Relative_Profile_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/notification_layout">
+
+            <TextView
+                android:id="@+id/language_text"
+                style="@style/TextView_Profile_Layout"
+                android:text="@string/language" />
+
+            <ImageView
+                style="@style/ImageView_Profile_Layout"
+                android:contentDescription="@string/profile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_password_layout"
+            style="@style/Relative_Profile_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/language_layout">
+
+            <TextView
+                android:id="@+id/change_text"
+                style="@style/TextView_Profile_Layout"
+                android:text="@string/change_password" />
+
+            <ImageView
+                style="@style/ImageView_Profile_Layout"
+                android:contentDescription="@string/profile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/privacy_layout"
+            style="@style/Relative_Profile_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/change_password_layout">
+
+            <TextView
+                android:id="@+id/privacy_text"
+                style="@style/TextView_Profile_Layout"
+                android:text="@string/privacy" />
+
+            <ImageView
+                style="@style/ImageView_Profile_Layout"
+                android:contentDescription="@string/profile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/terms_layout"
+            style="@style/Relative_Profile_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/privacy_layout">
+
+            <TextView
+                android:id="@+id/terms_text"
+                style="@style/TextView_Profile_Layout"
+                android:text="@string/terms_conditions" />
+
+            <ImageView
+                style="@style/ImageView_Profile_Layout"
+                android:contentDescription="@string/profile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign_out_layout"
+            style="@style/Relative_Profile_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/terms_layout">
+
+            <TextView
+                android:id="@+id/sign_out_text"
+                style="@style/TextView_Profile_Layout"
+                android:text="@string/sign_out" />
+
+            <ImageView
+                style="@style/ImageView_Profile_Layout"
+                android:contentDescription="@string/profile"
+                android:src="@drawable/ic_sign_out" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

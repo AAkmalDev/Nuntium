@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.VerificationFragment">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        style="@style/TextView_Toolbar"
+        android:text="@string/verification_code" />
+
+    <TextView
+        android:id="@+id/welcome_desc_text"
+        style="@style/TextView_Toolbar_Desc"
+        android:text="@string/you_send_to_your_email_adress" />
+
+    <uz.pandamobileuz.nuntium.ui.custom.OtpEditText
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_below="@+id/welcome_desc_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/custom_edit_text_back"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textIsSelectable="false"
+        android:textSize="20sp" />
+
+</RelativeLayout>

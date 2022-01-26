@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Nuntium News</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_back">Welcome Back 👋</string>
+    <string name="welcome_desc">I am happy to see you again. You can \n continue where you left off by logging in</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or">or</string>
+    <string name="sign_in_with_google">Sign In with Google</string>
+    <string name="sign_in_with_facebook">Sign In with Facebook</string>
+    <string name="have_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_new_password">Create New Password 🔒</string>
+    <string name="you_can_create">You can create a new password, please dont forget it too.</string>
+    <string name="new_password">New Password</string>
+    <string name="repeat_new_password">Repeat New Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="welcome_nuntium">Welcome to Nuntium 👋</string>
+    <string name="hello_welcome_desc">Hello, I guess you are new around here. You can start using the application after sign up.</string>
+    <string name="username">Username</string>
+    <string name="select_your_favorite_topics">Select your favorite topics</string>
+    <string name="select_some_of_your_favorite">Select some of your favorite topics to let us suggest better news for you.</string>
+    <string name="next">Next</string>
+    <string name="browse">Browse</string>
+    <string name="discover_things_of_this_world">Discover things of this world</string>
+    <string name="recommended_for_you">Recommended for you</string>
+    <string name="desc">Leads in individual states may change from one party to another as all the votes areLeads in individual states may change from one party to another as all the votes are counted. Select a state for detailed results, and select the Senate, House or Governor tabs to view those races. For more detailed state results click on the States A-Z links at the bottom of this page. Results source: NEP/Edison via Reuters. Leads in individual states may change from one party to another as all the votes are counted. Select a state for detailed results, and select the Senate, House or Governor tabs to view those races. For more detailed state results click on the States A-Z links at the bottom of this page. Results source: NEP/Edison via Reuters.</string>
+    <string name="results">Results</string>
+    <string name="article_image">article image</string>
+    <string name="categories">Categories</string>
+    <string name="thousands_of_articles_category">Thousands of articles in each category</string>
+    <string name="thousands_looking_category">Thousands of articles in the category you are looking for</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="saved_articles_to_the_library">Saved articles to the library</string>
+    <string name="you_haven_t_saved_any_articles">You haven\'t saved any articles yet. Start reading and bookmarking them now</string>
+    <string name="profile">Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="privacy">Privacy</string>
+    <string name="change_password">Change Password</string>
+    <string name="language">Language</string>
+    <string name="verification_code">Verification Code ✅</string>
+    <string name="you_send_to_your_email_adress">You need to enter 4-digit code we send to your email adress.</string>
+    <string name="not_empty">Not empty</string>
+    <string name="default_web_client_id_login">"984733030161-2p2gqahka9jp1q2an3ijhk79fj083n3e.apps.googleusercontent.com"</string>
+
+</resources>

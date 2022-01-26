@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "984733030161",
+    "firebase_url": "https://maqollar-e00ab.firebaseio.com",
+    "project_id": "maqollar-e00ab",
+    "storage_bucket": "maqollar-e00ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984733030161:android:7714708af69e93c2ae5eb0",
+        "android_client_info": {
+          "package_name": "uz.pandamobileuz.nuntium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984733030161-2p2gqahka9jp1q2an3ijhk79fj083n3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEpEwrpvEpmO-mVc6IWnQMS_56Mko5mVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984733030161-2p2gqahka9jp1q2an3ijhk79fj083n3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

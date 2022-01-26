@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1500">
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/scroll"
+            motion:touchAnchorSide="top" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/material_card_view_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHeight_percent="0.52"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.08"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/guideline_horizontal_2" />
+
+        <Constraint
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:elevation="1dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/guideline_horizontal_3" />
+
+        <Constraint
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="26dp"
+            android:alpha="1"
+            android:textColor="@color/white"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/category">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="@android:color/white" />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/image_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:src="@drawable/ic_arrow_back"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.06"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/guideline_horizontal_1" >
+            <CustomAttribute motion:attributeName="crossfade" motion:customFloatValue="0"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/image_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:src="@drawable/ic_bookmark_white"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.96"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@id/guideline_horizontal_1" >
+            <CustomAttribute motion:attributeName="crossfade" motion:customFloatValue="0"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/image_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:elevation="2dp"
+            android:src="@drawable/ic_reply_share"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.96"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/image_bookmark">
+            <CustomAttribute motion:attributeName="crossfade" motion:customFloatValue="0"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sf_pro_text_semibold"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            motion:layout_constraintStart_toEndOf="@+id/user_image"
+            motion:layout_constraintTop_toBottomOf="@id/title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="@android:color/white" />
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/material_card_view_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHeight_percent="0.25"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/image_back_arrow" />
+
+        <Constraint
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.08"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/material_card_view_image" />
+
+        <Constraint
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:elevation="1dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/user_image" />
+
+        <Constraint
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="26dp"
+            android:alpha="2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/category">
+
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="@android:color/black" />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/image_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:src="@drawable/ic_arrow_back_black_primary"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.06"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/guideline_horizontal_1">
+            <CustomAttribute motion:attributeName="crossfade" motion:customFloatValue="1"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/image_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:src="@drawable/ic_bookmark_grey_primary"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.96"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@id/guideline_horizontal_1" >
+            <CustomAttribute motion:attributeName="crossfade" motion:customFloatValue="1"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/image_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:src="@drawable/ic_reply_share_black_primary"
+            motion:layout_constraintEnd_toStartOf="@id/image_bookmark"
+            motion:layout_constraintHorizontal_bias="0.96"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/guideline_horizontal_1">
+            <CustomAttribute motion:attributeName="crossfade" motion:customFloatValue="1"/>
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            motion:layout_constraintStart_toEndOf="@+id/user_image"
+            motion:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_toEndOf="@+id/user_image"
+            android:fontFamily="@font/sf_pro_text_semibold"
+            android:maxLines="1"
+            android:textColor="@color/black_primary"
+            android:textSize="@dimen/_13sdp">
+            <CustomAttribute
+                motion:attributeName="textColor"
+                motion:customColorValue="@color/black_primary" />
+        </Constraint>
+
+    </ConstraintSet>
+</MotionScene>
