@@ -3,8 +3,7 @@ package uz.pandamobileuz.nuntium.ui.main
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
-import androidx.appcompat.view.ContextThemeWrapper
+import android.view.WindowManager
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import coil.load
@@ -24,6 +23,10 @@ class ArticleFragment : BaseFragment<FragmentArticleBinding>(FragmentArticleBind
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val window = requireActivity().window
+        window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+
         newsApi = arguments?.getSerializable("news") as NewsApi
     }
 
