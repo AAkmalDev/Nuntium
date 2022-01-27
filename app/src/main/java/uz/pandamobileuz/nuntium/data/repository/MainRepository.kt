@@ -24,4 +24,6 @@ class MainRepository @Inject constructor(val api: ApiService, val dao: NewsDao) 
 
     fun saveNews(newsApi: NewsApi) = dao.saveNews(newsApi)
 
+    fun data() = dao.getNews()
+
 }
